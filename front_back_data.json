@@ -1,0 +1,104 @@
+{
+  "flashcards": [
+    {
+      "front": "What is the largest planet in our solar system?",
+      "back": "Jupiter",
+      "hint": "It has a large red spot."
+    },
+    {
+      "front": "What is the chemical symbol for gold?",
+      "back": "Au",
+      "hint": "It's an abbreviation of the Latin word 'aurum'."
+    },
+    {
+      "front": "What year did the Berlin Wall fall?",
+      "back": "1989",
+      "hint": "The year Taylor Swift was born."
+    },
+    {
+      "front": "What is the formula for calculating force?",
+      "back": "F = ma, where F is force, m is mass, and a is acceleration.",
+      "hint": "Think of Newton's second law of motion."
+    },
+    {
+      "front": "What is the capital of Japan?",
+      "back": "Tokyo",
+      "hint": "It's a huge, bustling metropolis."
+    },
+    {
+      "front": "Who painted the Mona Lisa?",
+      "back": "Leonardo da Vinci",
+      "hint": "He was a Renaissance man known for his incredible inventions as well."
+    },
+    {
+      "front": "What is the process by which plants make their own food?",
+      "back": "Photosynthesis",
+      "hint": "It requires sunlight, water, and carbon dioxide."
+    },
+    {
+      "front": "What is the capital of Australia?",
+      "back": "Canberra",
+      "hint": "A common misconception is that it's Sydney."
+    },
+    {
+      "front": "What is the formula for the area of a circle?",
+      "back": "$A=\\pi r^2$, where $A$ is the area and $r$ is the radius.",
+      "hint": "The Greek letter $\\pi$ is involved."
+    },
+    {
+      "front": "What is the largest ocean on Earth?",
+      "back": "The Pacific Ocean",
+      "hint": "It covers about 30% of the Earth's surface."
+    },
+    {
+      "front": "What is the smallest country in the world?",
+      "back": "Vatican City",
+      "hint": "It's a city-state within Rome."
+    },
+    {
+      "front": "What is the boiling point of water in Celsius?",
+      "back": "100°C",
+      "hint": "Remember, this is at standard atmospheric pressure."
+    },
+    {
+      "front": "What element has the symbol 'Fe'?",
+      "back": "Iron",
+      "hint": "It's a very common metal."
+    },
+    {
+      "front": "What is the capital of Canada?",
+      "back": "Ottawa",
+      "hint": "It's in the province of Ontario."
+    },
+    {
+      "front": "What is the largest mammal in the world?",
+      "back": "The Blue Whale",
+      "hint": "It lives in the ocean."
+    },
+    {
+      "front": "What is the speed of light in a vacuum?",
+      "back": "Approximately 299,792,458 meters per second",
+      "hint": "It's often rounded to 300,000 km/s."
+    },
+    {
+      "front": "What is the chemical formula for water?",
+      "back": "$H_2O$",
+      "hint": "Two atoms of one element, one of another."
+    },
+    {
+      "front": "Who wrote 'Romeo and Juliet'?",
+      "back": "William Shakespeare",
+      "hint": "The Bard of Avon."
+    },
+    {
+      "front": "How many continents are there?",
+      "back": "Seven",
+      "hint": "North America, South America, Europe, Asia, Africa, Australia, and Antarctica."
+    },
+    {
+      "front": "What is the primary gas in Earth's atmosphere?",
+      "back": "Nitrogen",
+      "hint": "It makes up about 78% of the air we breathe."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #flashcard {
+      width: 400px;
+      height: 250px;
+      margin: 0 auto;
+      perspective: 1000px;
+    }
+    .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+      cursor: pointer;
+    }
+    .card.flipped {
+      transform: rotateY(180deg);
+    }
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #333;
+      border-radius: 10px;
+      font-size: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .front {
+      background-color: #f0f8ff;
+    }
+    .back {
+      background-color: #ffe4b5;
+      transform: rotateY(180deg);
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Flashcards</h1>
+  <div id="flashcard">
+    <div class="card" id="card">
+      <div class="card-face front" id="front-text">Loading...</div>
+      <div class="card-face back" id="back-text"></div>
+    </div>
+  </div>
+  <button onclick="nextCard()">Next Card</button>
+
+  <script>
+    let flashcards = [];
+    let currentIndex = 0;
+
+    // Load flashcards from JSON file
+    fetch('front_back_data.json')
+      .then(response => response.json())
+      .then(data => {
+        flashcards = data.flashcards;
+        showCard(currentIndex);
+      })
+      .catch(error => {
+        console.error('Error loading flashcards:', error);
+        document.getElementById('front-text').innerText = 'Failed to load flashcards.';
+      });
+
+    function showCard(index) {
+      const card = flashcards[index];
+      document.getElementById('front-text').innerText = card.front;
+      document.getElementById('back-text').innerText = card.back;
+      document.getElementById('card').classList.remove('flipped');
+    }
+
+    document.getElementById('card').addEventListener('click', function () {
+      this.classList.toggle('flipped');
+    });
+
+    function nextCard() {
+      currentIndex = (currentIndex + 1) % flashcards.length;
+      showCard(currentIndex);
+    }
+  </script>
+</body>
+</html>
